@@ -5,6 +5,6 @@ use_frameworks!
 
 target 'Charts-Playground' do
 pod 'RealmSwift'
-pod 'Charts/Realm'
+pod 'Charts'
 end
 
