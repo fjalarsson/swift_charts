@@ -1,5 +1,5 @@
 <snippet>
-  <content><![CDATA[
+  <content>
 # Swift_Charts
 Personal playground using ios-charts.
 
