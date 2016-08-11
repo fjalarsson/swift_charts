@@ -10,6 +10,7 @@
 		0597284F6681322B5662FE72 /* Pods_Charts_Playground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 600A4BD0A94A6B642162CC52 /* Pods_Charts_Playground.framework */; };
 		F46DFEA51D5CA257000E3D43 /* UIColor+RandomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46DFEA41D5CA257000E3D43 /* UIColor+RandomColor.swift */; };
 		F46DFEA71D5CA397000E3D43 /* Int+Conversions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46DFEA61D5CA397000E3D43 /* Int+Conversions.swift */; };
+		F46DFEAB1D5CA779000E3D43 /* String+FindValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46DFEAA1D5CA779000E3D43 /* String+FindValues.swift */; };
 		F490A0AF1D5B30D70060D00F /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F490A0AE1D5B30D70060D00F /* Dog.swift */; };
 		F490A0B31D5B3CD20060D00F /* Double+Conversions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F490A0B21D5B3CD20060D00F /* Double+Conversions.swift */; };
 		F490A0B61D5B45AB0060D00F /* MultipleLinesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F490A0B51D5B45AB0060D00F /* MultipleLinesController.swift */; };
@@ -39,6 +40,7 @@
 		CCCD50DFE1C6011301FBFEB7 /* Pods-Charts-Playground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Charts-Playground.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Charts-Playground/Pods-Charts-Playground.debug.xcconfig"; sourceTree = "<group>"; };
 		F46DFEA41D5CA257000E3D43 /* UIColor+RandomColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+RandomColor.swift"; sourceTree = "<group>"; };
 		F46DFEA61D5CA397000E3D43 /* Int+Conversions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Conversions.swift"; sourceTree = "<group>"; };
+		F46DFEAA1D5CA779000E3D43 /* String+FindValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+FindValues.swift"; sourceTree = "<group>"; };
 		F490A0AE1D5B30D70060D00F /* Dog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dog.swift; path = ../Dog.swift; sourceTree = "<group>"; };
 		F490A0B21D5B3CD20060D00F /* Double+Conversions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Conversions.swift"; sourceTree = "<group>"; };
 		F490A0B51D5B45AB0060D00F /* MultipleLinesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleLinesController.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				F490A0B21D5B3CD20060D00F /* Double+Conversions.swift */,
 				F46DFEA41D5CA257000E3D43 /* UIColor+RandomColor.swift */,
 				F46DFEA61D5CA397000E3D43 /* Int+Conversions.swift */,
+				F46DFEAA1D5CA779000E3D43 /* String+FindValues.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				F46DFEA51D5CA257000E3D43 /* UIColor+RandomColor.swift in Sources */,
 				F4A65EFB1D5B29EB003660AA /* AppDelegate.swift in Sources */,
 				F490A0B61D5B45AB0060D00F /* MultipleLinesController.swift in Sources */,
+				F46DFEAB1D5CA779000E3D43 /* String+FindValues.swift in Sources */,
 				F490A0AF1D5B30D70060D00F /* Dog.swift in Sources */,
 				F46DFEA71D5CA397000E3D43 /* Int+Conversions.swift in Sources */,
 			);
