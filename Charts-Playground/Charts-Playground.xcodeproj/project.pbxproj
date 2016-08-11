@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0597284F6681322B5662FE72 /* Pods_Charts_Playground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 600A4BD0A94A6B642162CC52 /* Pods_Charts_Playground.framework */; };
+		F46DFEA51D5CA257000E3D43 /* UIColor+RandomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46DFEA41D5CA257000E3D43 /* UIColor+RandomColor.swift */; };
+		F46DFEA71D5CA397000E3D43 /* Int+Conversions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46DFEA61D5CA397000E3D43 /* Int+Conversions.swift */; };
 		F490A0AF1D5B30D70060D00F /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = F490A0AE1D5B30D70060D00F /* Dog.swift */; };
-		F490A0B11D5B37690060D00F /* ChartHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F490A0B01D5B37690060D00F /* ChartHelpers.swift */; };
-		F490A0B31D5B3CD20060D00F /* NumericExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F490A0B21D5B3CD20060D00F /* NumericExtensions.swift */; };
+		F490A0B31D5B3CD20060D00F /* Double+Conversions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F490A0B21D5B3CD20060D00F /* Double+Conversions.swift */; };
 		F490A0B61D5B45AB0060D00F /* MultipleLinesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F490A0B51D5B45AB0060D00F /* MultipleLinesController.swift */; };
 		F4A65EFB1D5B29EB003660AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A65EFA1D5B29EB003660AA /* AppDelegate.swift */; };
 		F4A65EFD1D5B29EB003660AA /* SingleLineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A65EFC1D5B29EB003660AA /* SingleLineController.swift */; };
@@ -36,9 +37,10 @@
 		600A4BD0A94A6B642162CC52 /* Pods_Charts_Playground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Charts_Playground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		995AD9D8A8A43775A0200FA4 /* Pods-Charts-Playground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Charts-Playground.release.xcconfig"; path = "Pods/Target Support Files/Pods-Charts-Playground/Pods-Charts-Playground.release.xcconfig"; sourceTree = "<group>"; };
 		CCCD50DFE1C6011301FBFEB7 /* Pods-Charts-Playground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Charts-Playground.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Charts-Playground/Pods-Charts-Playground.debug.xcconfig"; sourceTree = "<group>"; };
+		F46DFEA41D5CA257000E3D43 /* UIColor+RandomColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+RandomColor.swift"; sourceTree = "<group>"; };
+		F46DFEA61D5CA397000E3D43 /* Int+Conversions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Conversions.swift"; sourceTree = "<group>"; };
 		F490A0AE1D5B30D70060D00F /* Dog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Dog.swift; path = ../Dog.swift; sourceTree = "<group>"; };
-		F490A0B01D5B37690060D00F /* ChartHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartHelpers.swift; sourceTree = "<group>"; };
-		F490A0B21D5B3CD20060D00F /* NumericExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumericExtensions.swift; sourceTree = "<group>"; };
+		F490A0B21D5B3CD20060D00F /* Double+Conversions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+Conversions.swift"; sourceTree = "<group>"; };
 		F490A0B51D5B45AB0060D00F /* MultipleLinesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleLinesController.swift; sourceTree = "<group>"; };
 		F4A65EF71D5B29EB003660AA /* Charts-Playground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Charts-Playground.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4A65EFA1D5B29EB003660AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,24 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F46DFEA81D5CA5D3000E3D43 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F490A0B21D5B3CD20060D00F /* Double+Conversions.swift */,
+				F46DFEA41D5CA257000E3D43 /* UIColor+RandomColor.swift */,
+				F46DFEA61D5CA397000E3D43 /* Int+Conversions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		F46DFEA91D5CA5F7000E3D43 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F490A0AE1D5B30D70060D00F /* Dog.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		F490A0B41D5B45830060D00F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,15 +129,14 @@
 		F4A65EF91D5B29EB003660AA /* Charts-Playground */ = {
 			isa = PBXGroup;
 			children = (
-				F490A0AE1D5B30D70060D00F /* Dog.swift */,
-				F4A65EFA1D5B29EB003660AA /* AppDelegate.swift */,
-				F4A65EFE1D5B29EB003660AA /* Main.storyboard */,
-				F490A0B41D5B45830060D00F /* Controllers */,
 				F4A65F011D5B29EB003660AA /* Assets.xcassets */,
+				F4A65EFA1D5B29EB003660AA /* AppDelegate.swift */,
+				F46DFEA91D5CA5F7000E3D43 /* Models */,
+				F46DFEA81D5CA5D3000E3D43 /* Extensions */,
+				F490A0B41D5B45830060D00F /* Controllers */,
+				F4A65EFE1D5B29EB003660AA /* Main.storyboard */,
 				F4A65F031D5B29EB003660AA /* LaunchScreen.storyboard */,
 				F4A65F061D5B29EB003660AA /* Info.plist */,
-				F490A0B01D5B37690060D00F /* ChartHelpers.swift */,
-				F490A0B21D5B3CD20060D00F /* NumericExtensions.swift */,
 			);
 			path = "Charts-Playground";
 			sourceTree = "<group>";
@@ -246,11 +265,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4A65EFD1D5B29EB003660AA /* SingleLineController.swift in Sources */,
-				F490A0B31D5B3CD20060D00F /* NumericExtensions.swift in Sources */,
+				F490A0B31D5B3CD20060D00F /* Double+Conversions.swift in Sources */,
+				F46DFEA51D5CA257000E3D43 /* UIColor+RandomColor.swift in Sources */,
 				F4A65EFB1D5B29EB003660AA /* AppDelegate.swift in Sources */,
 				F490A0B61D5B45AB0060D00F /* MultipleLinesController.swift in Sources */,
-				F490A0B11D5B37690060D00F /* ChartHelpers.swift in Sources */,
 				F490A0AF1D5B30D70060D00F /* Dog.swift in Sources */,
+				F46DFEA71D5CA397000E3D43 /* Int+Conversions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

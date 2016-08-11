@@ -12,7 +12,7 @@ import Charts
 
 class SingleLineController: UIViewController, ChartViewDelegate{
 
-    @IBOutlet var lineView: LineChartView!
+    @IBOutlet weak var lineView: LineChartView!
     
     //MARK: Variables
     var dog = Dog()
@@ -24,22 +24,23 @@ class SingleLineController: UIViewController, ChartViewDelegate{
     
     func initialize(){
         let data = dog.initSingleDog()
-        let weights = chv.IntArrayToDoubleArray(dog.getSingleDogWeight(data))
         let dates: [String] = ["Mon", "Tue", "Wed", "Thu","Fri"]
-        setChart(dates, values: weights)
+        let d = dog.getDog(data)
+        setChart(dates, dog: d)
         self.lineView.descriptionText = ""
         
     }
     
     
-    func setChart(dataPoints: [String], values: [Double]) {
+    func setChart(dataPoints: [String], dog: Dog) {
         lineView.noDataText = "No weights registrered"
+        
         var dataEntries: [ChartDataEntry] = []
         for i in 0..<dataPoints.count {
-            let dataEntry = ChartDataEntry(value: values[i].roundTo1f, xIndex: i)
+            let dataEntry = ChartDataEntry(value: dog.weights[i].weight.toDouble, xIndex: i)
             dataEntries.append(dataEntry)
         }
-        let lineChartDataSet = LineChartDataSet(yVals: dataEntries, label: "Weight")
+        let lineChartDataSet = LineChartDataSet(yVals: dataEntries, label: dog.name)
         let lineChartData = LineChartData(xVals: dataPoints, dataSet: lineChartDataSet)
         lineView.xAxis.labelPosition = .Bottom
         self.lineView.data = lineChartData

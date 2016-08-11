@@ -46,16 +46,77 @@ class Dog: Object {
         var dogs = [Dog]()
         
         //Create 3 dogs
-        for _ in 1...3 {
+        for i in 1...3 {
             let dog = Dog()
             let list = List<Weight>()
             
-            //Create 5 weights per dog
-            for _ in 1...5 {
-                let weight = Weight()
-                weight.weight = Int(arc4random_uniform(30) + 1)
-                list.append(weight)
+            if i == 1{
+                //Create 5 weights per dog
+                for i in 1...5 {
+                    let weight = Weight()
+                    switch i {
+                    case 1:
+                        weight.weight = 1
+                    case 2:
+                        weight.weight = 3
+                    case 3:
+                        weight.weight = 6
+                    case 4:
+                        weight.weight = 5
+                    case 5:
+                        weight.weight = 8
+                    default:
+                        0
+                    }
+                    list.append(weight)
+                }
+                dog.name = "Sture"
             }
+            else if i == 2{
+                //Create 5 weights per dog
+                for i in 1...5 {
+                    let weight = Weight()
+                    switch i {
+                    case 1:
+                        weight.weight = 0
+                    case 2:
+                        weight.weight = 2
+                    case 3:
+                        weight.weight = 3
+                    case 4:
+                        weight.weight = 3
+                    case 5:
+                        weight.weight = 6
+                    default:
+                        0
+                    }
+                    list.append(weight)
+                }
+                dog.name = "Bengt"
+            }
+            else if i == 3{
+                //Create 5 weights per dog
+                for i in 1...5 {
+                    let weight = Weight()
+                    switch i {
+                    case 1:
+                        weight.weight = 2
+                    case 2:
+                        weight.weight = 3
+                    case 3:
+                        weight.weight = 6
+                    case 4:
+                        weight.weight = 6
+                    case 5:
+                        weight.weight = 7
+                    default:
+                        0
+                    }
+                    list.append(weight)
+                }
+                dog.name = "Ragnar"
+            }
+          
             dog.weights = list
             dogs.append(dog)
         }
@@ -76,7 +137,15 @@ class Dog: Object {
             weightArray.append(weights)
         }
         return weightArray
-    }    
+    }
+    
+    func getDogs(dogs: [Dog]) -> [Dog]{
+        return dogs
+    }
+    
+    func getDog(dog: Dog) -> Dog{
+        return dog
+    }
 }
 
 
